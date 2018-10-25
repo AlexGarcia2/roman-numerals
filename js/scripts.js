@@ -1,12 +1,13 @@
 function master (input){
-debugger;
+// debugger;
   var masterOutput = input.split("")
 
   for (i = 0; i < masterOutput.length; i++){
-    if (([i] === 1-9) && ([i] === "")){
-    return romanOneToNine();
+    if ((masterOutput[0]) && (!masterOutput[1])){
+    romanOneToNine(masterOutput[0]);
   }else if (([i]=== 1-9) && ([i] === 0-9) && ([i] !== "")){
-    return romanTenToFifty();
+    console.log('nothing here')
+     // romanTenToFifty();
   }
 
 
@@ -16,6 +17,7 @@ debugger;
 }
 
 function romanOneToNine (input){
+  console.log('enters')
 
   var output = [input]
   var numsToTen = [" ","I","II","III","V","X"]
